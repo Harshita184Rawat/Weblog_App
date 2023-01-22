@@ -1,0 +1,53 @@
+<!DOCKTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+     <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <style> h2{color:aqua;}</style>
+    <Header>
+        <h1 style="color:orange;">REGISTER HERE</h1>
+    </header>
+    <div class="container">
+        <form action="">
+            <p>Required fields are followed by *</p>
+            <h2 style="color:purple;">Details</h2>
+            <h3><p style="color:green;">Name:* <input type="text" name="name" placeholder="Rahul pandey" required  ></p></h3>
+            <h3><p style="color:green;">Email:*<input type="email" name="email" id="email" placeholder="example@gmail.com" required></p></h3>
+            <h3><p style="color:green;">Contact Number:*<input type="tel" name="phone" id="phone" length="10" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></p></h3>
+           <fieldset><legend><b style="color:green;">GENDER</b></legend>
+            male <input type="radio" name="gender" id="gender">
+            Female <input type="radio" name="gender" id="gender">
+            Others <input type="radio" name="gender" id="gender">
+            </p></fieldset>
+            <h3><p style="color:green;">Country:
+                <select name="country" id="country">
+                    <option value="">--select your country--</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                    <option value="United States">United States</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Australia">Australia</option>
+                    <option value="India">India</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+            </p></h3>
+            <h2 style="color:purple;">Set Username and password</h2>
+            <p>Note: set email as your username</p>
+            <h3><p style="color:green;">Username:*<input type="username" name="username" id="username" placeholder="example@gmail.com" required></p></h3>
+            <h3><p style="color:green;">Password:*<input type="password" name="password" id="password" placeholder="A@har12h" required></p></h3>
+            <h3><p style="color:green;">Confirm password:*<input type="Confirm" name="password" id="password"  required></p></h3>
+            <h2 style="color:blue;"><input type="submit" value="REGISTER"></h2>
+
+        </form>
+        <nav>
+            <a href="http://127.0.0.1:8000/blog/login/" target="http://127.0.0.1:8000/blog/login/" >Login if already registered</a>
+        </nav>
+
+        
+    </div>
+</body>
