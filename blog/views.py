@@ -7,3 +7,12 @@ def login(request):
 
 def register(request):
     return render(request, 'register.html')
+
+def create(request):
+    return render(request, 'create.html')
+
+def home(request):
+    context = {
+        'home': '/static/home.css'
+    }
+    return render(request, 'home.html', context)
